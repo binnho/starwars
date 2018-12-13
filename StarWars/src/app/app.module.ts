@@ -10,8 +10,8 @@ import { PersonagemService } from './services/personagem/personagem.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { FilmeComponent } from './filme/filme.component';
-import { FusionChartsModule } from 'angular-fusioncharts';
-
+import { FilmeService } from './services/filme/filme.service';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 @NgModule({
   declarations: [
@@ -25,10 +25,12 @@ import { FusionChartsModule } from 'angular-fusioncharts';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    ChartsModule,
     routes
   ],
   providers: [
-      PersonagemService
+      PersonagemService,
+      FilmeService
   ],
   bootstrap: [AppComponent]
 })

@@ -41,7 +41,7 @@ export class PersonagemComponent implements OnInit {
             this.netxPage = responseApi['next'];
             this.previousPage = responseApi['previous'];
 
-            if (typeof this.listPersonagensApi == 'undefined' || this.listPersonagensApi.length === 0) {
+            if (typeof this.listPersonagensApi === 'undefined' || this.listPersonagensApi.length === 0) {
                 return;
             }
             this.listPersonagensView = new Array();
@@ -154,7 +154,7 @@ export class PersonagemComponent implements OnInit {
             this.netxPage = responseApi['next'];
             this.previousPage = responseApi['previous'];
 
-            if (typeof this.listPersonagensApi == 'undefined' || this.listPersonagensApi.length === 0) {
+            if (typeof this.listPersonagensApi === 'undefined' || this.listPersonagensApi.length === 0) {
                 return;
             }
             this.listPersonagensView = new Array();
